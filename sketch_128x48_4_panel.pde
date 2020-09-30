@@ -68,8 +68,8 @@ int resetStepDrawPixelArrayInOrderRightScreen=0;
   boolean webcamMode = true ; 
   boolean webcamTHreshold = false;
   boolean lineMode = false ; 
-  float threshold = 10;
-  color thresholdColor = color(255,255,255);
+  float threshold = 150;
+  color thresholdColor = color(255,180,105);
 
 void setup() {
 
@@ -162,7 +162,7 @@ void draw() {
           int loc = x + y*webcamCroppedSizeX;
           // Test the brightness against the threshold
           if (brightness(webcamCropped.pixels[loc]) > threshold) {
-            webcamCroppedEffect.pixels[loc]  = color(255,0,0);  // White
+            webcamCroppedEffect.pixels[loc]  =thresholdColor;  // RED
           }  else {
             webcamCroppedEffect.pixels[loc]  = color(0);    // Black
           }
