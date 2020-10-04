@@ -1,4 +1,19 @@
 # P7
+========================
+### Left Screen 
+Loop (1 hour)fill up the screen (512px white) in one hours 
+### Right Screen:  
+Loop (10mins)
+turn on one pixel per second, 300pixel to turn on in 5 mins ,  5 RED : 0 White to 2 Red :3 White
+turn on one pixel per second, 300 pixel to turn on in 6th-10th min, Black background,  random red & white pixel turn on for 300 times
+### Middle screen 
+loop (45mins)
+mode 1: Webcam image
+mode 2: Webcam Image (threshold)
+mode 3: draw lines per 3 seconds, one minute reset
+
+
+=========================
 
 ## Adjust the Webcam Setting using FFmpeg
 
